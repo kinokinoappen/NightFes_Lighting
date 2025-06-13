@@ -94,6 +94,46 @@
    <Address>8</Address>
    <Channels>2</Channels>
   </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>HPAR64-9</Model>
+   <Mode>13ch</Mode>
+   <ID>8</ID>
+   <Name>HPAR64-9 [9]</Name>
+   <Universe>0</Universe>
+   <Address>66</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>HPAR64-9</Model>
+   <Mode>13ch</Mode>
+   <ID>9</ID>
+   <Name>HPAR64-9 [10]</Name>
+   <Universe>0</Universe>
+   <Address>79</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>ORION WH</Model>
+   <Mode>2ch</Mode>
+   <ID>10</ID>
+   <Name>ORION WH [11]</Name>
+   <Universe>0</Universe>
+   <Address>92</Address>
+   <Channels>2</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>ORION WH</Model>
+   <Mode>2ch</Mode>
+   <ID>11</ID>
+   <Name>ORION WH [12]</Name>
+   <Universe>0</Universe>
+   <Address>94</Address>
+   <Channels>2</Channels>
+  </Fixture>
   <Function ID="0" Type="Scene" Name="scene">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="5">0,255,2,61,3,23,4,170,5,87,7,68,8,0,9,36,10,0</FixtureVal>
@@ -119,6 +159,10 @@
    <FxItem ID="5" XPos="1012" YPos="0" ZPos="4536"/>
    <FxItem ID="6" XPos="778" YPos="2500" ZPos="503" XRot="40" YRot="-35"/>
    <FxItem ID="7" XPos="3695" YPos="2500" ZPos="519" XRot="40" YRot="35"/>
+   <FxItem ID="8" XPos="1682" YPos="2500" ZPos="171" XRot="30" YRot="15"/>
+   <FxItem ID="9" XPos="2783.56" YPos="2500" ZPos="203.085" XRot="30" YRot="-15"/>
+   <FxItem ID="10" XPos="127.613" YPos="1000" ZPos="3281.75" XRot="-80"/>
+   <FxItem ID="11" XPos="4458.48" YPos="1000" ZPos="3289.72" XRot="-80"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
