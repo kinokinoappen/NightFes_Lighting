@@ -94,7 +94,47 @@
    <Address>8</Address>
    <Channels>2</Channels>
   </Fixture>
-  <Function ID="0" Type="Scene" Name="scene">
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>HPAR64-9</Model>
+   <Mode>13ch</Mode>
+   <ID>8</ID>
+   <Name>HPAR64-9 [9]</Name>
+   <Universe>0</Universe>
+   <Address>66</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>HPAR64-9</Model>
+   <Mode>13ch</Mode>
+   <ID>9</ID>
+   <Name>HPAR64-9 [10]</Name>
+   <Universe>0</Universe>
+   <Address>79</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>ORION WH</Model>
+   <Mode>2ch</Mode>
+   <ID>10</ID>
+   <Name>ORION WH [11]</Name>
+   <Universe>0</Universe>
+   <Address>92</Address>
+   <Channels>2</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>ORION WH</Model>
+   <Mode>2ch</Mode>
+   <ID>11</ID>
+   <Name>ORION WH [12]</Name>
+   <Universe>0</Universe>
+   <Address>94</Address>
+   <Channels>2</Channels>
+  </Fixture>
+  <Function ID="0" Type="Scene" Name="scene6">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="5">0,255,2,61,3,23,4,170,5,87,7,68,8,0,9,36,10,0</FixtureVal>
    <FixtureVal ID="0">0,255,2,0,3,0,4,42,5,170,7,67,8,27,9,0,10,0</FixtureVal>
@@ -105,6 +145,46 @@
    <FixtureVal ID="6">0,0,1,0</FixtureVal>
    <FixtureVal ID="7">0,0,1,0</FixtureVal>
   </Function>
+  <Function ID="1" Type="Scene" Name="scene2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,150,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="0">0,0</FixtureVal>
+   <FixtureVal ID="1">0,150,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="3">0,150,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="4">0,150,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="5">0,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0</FixtureVal>
+   <FixtureVal ID="8">0,150,2,255,3,255,4,0,5,0,6,255,7,0,8,0,12,150</FixtureVal>
+   <FixtureVal ID="9">0,150,2,255,3,255,4,0,5,0,6,255,7,0,8,0,12,150</FixtureVal>
+   <FixtureVal ID="10">0,0,1,255</FixtureVal>
+   <FixtureVal ID="11">0,0,1,255</FixtureVal>
+  </Function>
+  <Function ID="2" Type="Scene" Name="scene3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,200,4,154,5,92,6,0,7,0</FixtureVal>
+   <FixtureVal ID="2">0,200,4,154,5,92,6,0,7,0</FixtureVal>
+   <FixtureVal ID="8">0,200,2,154,3,92,4,0,5,0,6,255,7,0,8,0,12,200</FixtureVal>
+   <FixtureVal ID="9">0,200,2,154,3,92,4,0,5,0,6,255,7,0,8,0,12,200</FixtureVal>
+   <FixtureVal ID="1">0,200,4,154,5,92,6,0,7,0</FixtureVal>
+   <FixtureVal ID="3">0,200,4,154,5,92,6,0,7,0</FixtureVal>
+   <FixtureVal ID="0">0,0</FixtureVal>
+   <FixtureVal ID="5">0,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,255</FixtureVal>
+   <FixtureVal ID="11">0,0,1,255</FixtureVal>
+  </Function>
+  <Function ID="3" Type="Chaser" Name="New Chaser 3">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="4" Type="Scene" Name="New Scene 4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">0,246,2,0,3,0,4,255,5,0,6,0,7,0,8,0,12,246</FixtureVal>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -112,13 +192,17 @@
    <Grid Width="5" Height="3" Depth="5" Units="0" POV="1"/>
    <StageItem>0</StageItem>
    <FxItem ID="0" XPos="3728" YPos="0" ZPos="4465"/>
-   <FxItem ID="1" XPos="4098" YPos="2500" ZPos="476" XRot="20" YRot="45"/>
-   <FxItem ID="2" XPos="364" YPos="2500" ZPos="432" XRot="20" YRot="-45"/>
-   <FxItem ID="3" XPos="4402.66" YPos="1000" ZPos="4149.31" XRot="-90" YRot="-30"/>
-   <FxItem ID="4" XPos="260.902" YPos="1000" ZPos="4079" XRot="-90" YRot="30"/>
+   <FxItem ID="1" XPos="4098" YPos="2500" ZPos="476" XRot="55" YRot="45"/>
+   <FxItem ID="2" XPos="364" YPos="2500" ZPos="432" XRot="55" YRot="-45"/>
+   <FxItem ID="3" XPos="4402" YPos="0" ZPos="4149" XRot="-110" YRot="-30"/>
+   <FxItem ID="4" XPos="260" YPos="0" ZPos="4079" XRot="-100" YRot="30"/>
    <FxItem ID="5" XPos="1012" YPos="0" ZPos="4536"/>
    <FxItem ID="6" XPos="778" YPos="2500" ZPos="503" XRot="40" YRot="-35"/>
    <FxItem ID="7" XPos="3695" YPos="2500" ZPos="519" XRot="40" YRot="35"/>
+   <FxItem ID="8" XPos="1682" YPos="2500" ZPos="171" XRot="30" YRot="15"/>
+   <FxItem ID="9" XPos="2783.56" YPos="2500" ZPos="203.085" XRot="30" YRot="-15"/>
+   <FxItem ID="10" XPos="127.613" YPos="1000" ZPos="3281.75" XRot="-80"/>
+   <FxItem ID="11" XPos="4458.48" YPos="1000" ZPos="3289.72" XRot="-80"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
