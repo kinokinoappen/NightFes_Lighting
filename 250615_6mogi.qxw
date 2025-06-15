@@ -9,7 +9,7 @@
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Internal" BPM="120"/>
-   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 1" ID="0" Passthrough="True"/>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
@@ -157,10 +157,10 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="28">1:0,255,4,255,5,255:2:4,255,5,255:8:2,255,3,255:9:0,255,2,255,3,255,12,255</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="18">1:4,255,5,255:2:0,255,4,255,5,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
-   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="24">1:4,255,5,255:2:4,255,5,255:3:0,255,7,207:6:0,100,1,255:7:0,100,1,255:8:2,255,3,255:9:2,255,3,255</Step>
-   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="29">1:4,255,5,255:2:4,255,5,255:4:0,255,7,207:8:2,255,3,255:9:2,255,3,255:10:0,100,1,255:11:0,100,1,255</Step>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:0,255,4,255,5,255:2:4,255,5,255:7:0,255,1,255:8:2,255,3,255:9:0,255,2,255,3,255,12,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:0,255,4,255,5,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:3:0,255,7,207:6:0,100,1,255:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:4:0,255,7,207:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255:10:0,100,1,255:11:0,100,1,255</Step>
   </Function>
   <Function ID="5" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
