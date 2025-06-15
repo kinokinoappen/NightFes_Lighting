@@ -61,7 +61,7 @@
    <ID>6</ID>
    <Name>LED par-light (standard) [7]</Name>
    <Universe>0</Universe>
-   <Address>34</Address>
+   <Address>153</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
@@ -157,10 +157,10 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:0,255,4,255,5,255:2:4,255,5,255:7:0,255,1,255:8:2,255,3,255:9:0,255,2,255,3,255,12,255</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:0,255,4,255,5,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
-   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:3:0,255,7,207:6:0,100,1,255:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255</Step>
-   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:4:0,255,7,207:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255:10:0,100,1,255:11:0,100,1,255</Step>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:0,255,4,255,5,255:2:4,255,5,255:3:0,255:7:0,255,1,255:8:2,255,3,255:9:0,255,2,255,3,255,12,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:0,255,4,255,5,255:3:0,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:3:0,255:6:0,100,1,255:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:3:0,255:4:0,255,7,207:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255:10:0,100,1,255:11:0,100,1,255</Step>
   </Function>
   <Function ID="5" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
