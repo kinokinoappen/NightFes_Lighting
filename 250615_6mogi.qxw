@@ -189,9 +189,9 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="14">2:0,255,4,255,5,255:8:0,255,2,255,3,255,12,255</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="20">1:0,255,4,255,5,255:2:4,255,5,255:8:2,255,3,255:9:0,255,2,255,3,255,12,255</Step>
-   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="23">1:4,255,5,255:2:4,255,5,255:3:0,255,4,255,5,255:8:2,255,3,255:9:2,255,3,255</Step>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="27">2:0,255,4,255,5,255:8:0,255,2,255,3,255,12,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="27">1:0,255,4,255,5,255:2:4,255,5,255:8:2,255,3,255:9:0,255,2,255,3,255,12,255</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="27">1:4,255,5,255:2:4,255,5,255:3:0,255,4,255,5,255:8:2,255,3,255:9:2,255,3,255</Step>
    <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="27">1:4,255,5,255:2:4,255,5,255:3:0,255,4,255,5,255:4:0,255,4,255,5,255:8:2,255,3,255:9:2,255,3,255</Step>
   </Function>
   <Function ID="5" Type="Scene" Name="New Scene" Hidden="True">
@@ -214,16 +214,22 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="23">2:0,255,4,255,5,255:4:0,255,4,255,5,255:8:0,255,2,255,3,255,12,255</Step>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="26">2:0,255,4,255,5,255:4:0,255,4,255,5,255:8:0,255,2,255,3,255,12,255</Step>
    <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="26">1:0,255,4,255,5,255:3:0,255,4,255,5,255:9:0,255,2,255,3,255,12,255</Step>
   </Function>
   <Function ID="10" Type="Show" Name="main">
    <TimeDivision Type="Time" BPM="120"/>
    <Track ID="0" Name="Track 1" isMute="0">
+    <ShowFunction ID="4" StartTime="0" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="4" StartTime="2000" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="4" StartTime="4200" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="4" StartTime="6400" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="4" StartTime="8600" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="4" StartTime="10800" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="4" StartTime="13000" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="1" StartTime="17000" Duration="6763" Color="#646464"/>
+    <ShowFunction ID="2" StartTime="24000" Duration="5705" Color="#646464"/>
     <ShowFunction ID="9" StartTime="35840" Duration="5000" Color="#646464"/>
-    <ShowFunction ID="4" StartTime="1199" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="1" StartTime="17779" Duration="5000" Color="#646464"/>
-    <ShowFunction ID="2" StartTime="24834" Duration="5000" Color="#646464"/>
     <ShowFunction ID="0" StartTime="41698" Duration="5000" Color="#646464"/>
    </Track>
   </Function>
