@@ -16,6 +16,16 @@
   </InputOutputMap>
   <Fixture>
    <Manufacturer>Glint</Manufacturer>
+   <Model>LED par-light (4in1/RGBW)</Model>
+   <Mode>8ch A***</Mode>
+   <ID>0</ID>
+   <Name>LED par-light (4in1/RGBW) [1]</Name>
+   <Universe>0</Universe>
+   <Address>80</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Glint</Manufacturer>
    <Model>LED par-light (4in1/RGBW DX)</Model>
    <Mode>8ch A***</Mode>
    <ID>1</ID>
@@ -53,6 +63,16 @@
    <Universe>0</Universe>
    <Address>55</Address>
    <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Glint</Manufacturer>
+   <Model>LED par-light (4in1/RGBW)</Model>
+   <Mode>8ch A***</Mode>
+   <ID>5</ID>
+   <Name>LED par-light (4in1/RGBW) [6]</Name>
+   <Universe>0</Universe>
+   <Address>88</Address>
+   <Channels>8</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Glint</Manufacturer>
@@ -217,18 +237,20 @@
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
-   <Grid Width="5" Height="3" Depth="5" Units="0" POV="1"/>
+   <Grid Width="11" Height="3" Depth="6" Units="0" POV="1"/>
    <StageItem>0</StageItem>
-   <FxItem ID="1" XPos="4378.39" YPos="2500" ZPos="1164.95" XRot="55" YRot="45"/>
-   <FxItem ID="2" XPos="115.656" YPos="2500" ZPos="1233.11" XRot="55" YRot="-45"/>
-   <FxItem ID="3" XPos="897.243" YPos="1000" ZPos="4550.37"/>
-   <FxItem ID="4" XPos="3845.33" YPos="1000" ZPos="4502.3"/>
-   <FxItem ID="6" XPos="184.255" YPos="0" ZPos="3396.71"/>
-   <FxItem ID="7" XPos="1714.38" YPos="0" ZPos="4502.24"/>
-   <FxItem ID="8" XPos="1305.48" YPos="2500" ZPos="291.167" XRot="30" YRot="15"/>
-   <FxItem ID="9" XPos="3480.53" YPos="2500" ZPos="227.118" XRot="30" YRot="-15"/>
-   <FxItem ID="10" XPos="2972.12" YPos="0" ZPos="4470.19"/>
-   <FxItem ID="11" XPos="4438.15" YPos="0" ZPos="3661.07"/>
+   <FxItem ID="0" XPos="2663" YPos="0" ZPos="4993"/>
+   <FxItem ID="1" XPos="8647.32" YPos="2500" ZPos="1467.77" XRot="55" YRot="45"/>
+   <FxItem ID="2" XPos="2039.41" YPos="2500" ZPos="1382.31" XRot="55" YRot="-45"/>
+   <FxItem ID="3" XPos="2692.81" YPos="1000" ZPos="1489.54"/>
+   <FxItem ID="4" XPos="8041.72" YPos="1000" ZPos="1481.71"/>
+   <FxItem ID="5" XPos="8011" YPos="0" ZPos="4874"/>
+   <FxItem ID="6" XPos="1238.93" YPos="0" ZPos="345.997"/>
+   <FxItem ID="7" XPos="807.882" YPos="0" ZPos="327.121"/>
+   <FxItem ID="8" XPos="282.88" YPos="2500" ZPos="253.679" XRot="30" YRot="15"/>
+   <FxItem ID="9" XPos="10362.4" YPos="2500" ZPos="273.521" XRot="30" YRot="-15"/>
+   <FxItem ID="10" XPos="9300.17" YPos="0" ZPos="286.355"/>
+   <FxItem ID="11" XPos="9842.27" YPos="0" ZPos="296.569"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
