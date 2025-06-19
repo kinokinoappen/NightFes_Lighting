@@ -9,7 +9,9 @@
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Internal" BPM="120"/>
-   <Universe Name="Universe 1" ID="0" Passthrough="True"/>
+   <Universe Name="Universe 1" ID="0" Passthrough="True">
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
+   </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
@@ -134,6 +136,14 @@
    <Address>70</Address>
    <Channels>2</Channels>
   </Fixture>
+  <FixtureGroup ID="0">
+   <Name>RGBs</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="8">0</Head>
+   <Head X="1" Y="0" Fixture="9">0</Head>
+   <Head X="0" Y="1" Fixture="0">0</Head>
+   <Head X="1" Y="1" Fixture="5">0</Head>
+  </FixtureGroup>
   <Function ID="0" Type="Scene" Name="scene6">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,255,4,14,5,101,6,255,7,0</FixtureVal>
@@ -233,11 +243,44 @@
    <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">2</Step>
    <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">6</Step>
   </Function>
-  <Function ID="12" Type="Scene" Name="New Scene 12">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  <Function ID="12" Type="RGBMatrix" Name="RGB_sample">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Opposite</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4278190335</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
+  </Function>
+  <Function ID="13" Type="EFX" Name="New EFX 13">
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Square</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>123</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
-   <Font>Sans Serif,9,-1,5,50,0,0,0,0,0</Font>
+   <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
    <Grid Width="11" Height="3" Depth="6" Units="0" POV="1"/>
@@ -259,7 +302,7 @@
  <VirtualConsole>
   <Frame Caption="Page 1" ID="0">
    <Appearance>
-    <Font>Sans Serif,9,-1,5,50,0,0,0,0,0</Font>
+    <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    </Appearance>
    <WindowState Visible="True" X="0" Y="0" Width="1920" Height="1080"/>
    <AllowResize>False</AllowResize>
@@ -270,7 +313,7 @@
   </Frame>
   <Frame Caption="Page 2" ID="1">
    <Appearance>
-    <Font>Sans Serif,9,-1,5,50,0,0,0,0,0</Font>
+    <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    </Appearance>
    <WindowState Visible="True" X="0" Y="0" Width="1920" Height="1080"/>
    <AllowResize>False</AllowResize>
@@ -281,7 +324,7 @@
   </Frame>
   <Frame Caption="Page 3" ID="2">
    <Appearance>
-    <Font>Sans Serif,9,-1,5,50,0,0,0,0,0</Font>
+    <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    </Appearance>
    <WindowState Visible="True" X="0" Y="0" Width="1920" Height="1080"/>
    <AllowResize>False</AllowResize>
@@ -292,7 +335,7 @@
   </Frame>
   <Frame Caption="Page 4" ID="3">
    <Appearance>
-    <Font>Sans Serif,9,-1,5,50,0,0,0,0,0</Font>
+    <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    </Appearance>
    <WindowState Visible="True" X="0" Y="0" Width="1920" Height="1080"/>
    <AllowResize>False</AllowResize>
