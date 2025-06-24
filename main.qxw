@@ -136,6 +136,36 @@
    <Address>70</Address>
    <Channels>2</Channels>
   </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>ORION WH</Model>
+   <Mode>2ch</Mode>
+   <ID>12</ID>
+   <Name>ORION WH [13]</Name>
+   <Universe>0</Universe>
+   <Address>34</Address>
+   <Channels>2</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>ORION WH</Model>
+   <Mode>2ch</Mode>
+   <ID>13</ID>
+   <Name>ORION WH [14]</Name>
+   <Universe>0</Universe>
+   <Address>96</Address>
+   <Channels>2</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>StageEvolution</Manufacturer>
+   <Model>ORION WH</Model>
+   <Mode>2ch</Mode>
+   <ID>14</ID>
+   <Name>ORION WH [15]</Name>
+   <Universe>0</Universe>
+   <Address>98</Address>
+   <Channels>2</Channels>
+  </Fixture>
   <FixtureGroup ID="0">
    <Name>RGBs</Name>
    <Size X="2" Y="2"/>
@@ -187,7 +217,7 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:0,255,4,255,5,255:2:4,255,5,255:3:0,255:7:0,255,1,255:8:2,255,3,255:9:0,255,2,255,3,255,12,255</Step>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="34">1:0,255,4,255,5,255:2:4,255,5,255:3:0,255:7:0,255,1,255:8:2,255,3,255:9:0,255,2,255,3,255,12,255</Step>
    <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:0,255,4,255,5,255:3:0,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
    <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:3:0,255:6:0,100,1,255:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255</Step>
    <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:3:0,255:4:0,255,7,207:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255:10:0,100,1,255:11:0,100,1,255</Step>
@@ -297,6 +327,9 @@
    <FxItem ID="9" XPos="10362.4" YPos="2500" ZPos="273.521" XRot="30" YRot="-15"/>
    <FxItem ID="10" XPos="9300.17" YPos="0" ZPos="286.355"/>
    <FxItem ID="11" XPos="9842.27" YPos="0" ZPos="296.569"/>
+   <FxItem ID="12" XPos="4637.68" YPos="1000" ZPos="1496.99"/>
+   <FxItem ID="13" XPos="5080.13" YPos="1000" ZPos="1506.78"/>
+   <FxItem ID="14" XPos="5509.9" YPos="1000" ZPos="1516.46"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
