@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FIXANDFUNC">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SHOWMGR">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>5.0.0 GIT</Version>
@@ -174,30 +174,60 @@
    <Head X="0" Y="1" Fixture="0">0</Head>
    <Head X="1" Y="1" Fixture="5">0</Head>
   </FixtureGroup>
-  <Function ID="0" Type="Scene" Name="scene6">
+  <FixtureGroup ID="1">
+   <Name>upperleft</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="8">0</Head>
+   <Head X="1" Y="0" Fixture="7">0</Head>
+   <Head X="0" Y="1" Fixture="2">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="2">
+   <Name>lowerleft</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="6">0</Head>
+   <Head X="1" Y="0" Fixture="0">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="3">
+   <Name>lowerright</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="5">0</Head>
+   <Head X="1" Y="0" Fixture="10">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="4">
+   <Name>upperright</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="1">0</Head>
+   <Head X="1" Y="0" Fixture="11">0</Head>
+   <Head X="0" Y="1" Fixture="9">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="5">
+   <Name>back</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="12">0</Head>
+   <Head X="1" Y="0" Fixture="13">0</Head>
+   <Head X="0" Y="1" Fixture="14">0</Head>
+  </FixtureGroup>
+  <Function ID="0" Type="Scene" Name="_scene6_1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,255,4,14,5,101,6,255,7,0</FixtureVal>
    <FixtureVal ID="2">0,255,4,14,5,101,6,255,7,0</FixtureVal>
+   <FixtureVal ID="3">0,150,7,30</FixtureVal>
+   <FixtureVal ID="4">0,150,7,30</FixtureVal>
   </Function>
-  <Function ID="1" Type="Scene" Name="scene2">
+  <Function ID="1" Type="Scene" Name="_scene2_1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">0,255,4,255,5,255,6,0,7,0</FixtureVal>
    <FixtureVal ID="1">0,255,4,255,5,255,6,0,7,0</FixtureVal>
    <FixtureVal ID="8">0,255,2,255,3,255,4,0,5,255,6,255,7,255,8,0,12,255</FixtureVal>
    <FixtureVal ID="9">0,255,2,255,3,255,4,0,5,255,6,255,7,255,8,0,12,150</FixtureVal>
-   <FixtureVal ID="6"/>
-   <FixtureVal ID="3"/>
-   <FixtureVal ID="7"/>
-   <FixtureVal ID="10"/>
-   <FixtureVal ID="4"/>
-   <FixtureVal ID="11"/>
-  </Function>
-  <Function ID="2" Type="Scene" Name="scene3_01">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">0,200,4,154,5,92,6,0,7,0</FixtureVal>
-   <FixtureVal ID="8">0,200,2,154,3,92,4,0,5,0,6,255,7,0,8,0,12,200</FixtureVal>
-   <FixtureVal ID="9">0,200,2,154,3,92,4,0,5,0,6,255,7,0,8,0,12,200</FixtureVal>
-   <FixtureVal ID="1">0,200,4,154,5,92,6,0,7,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,255</FixtureVal>
+   <FixtureVal ID="10">0,255,1,255</FixtureVal>
+   <FixtureVal ID="11">0,255,1,255</FixtureVal>
+   <FixtureVal ID="0">0,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="5">0,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="3">0,255</FixtureVal>
+   <FixtureVal ID="4">0,255</FixtureVal>
   </Function>
   <Function ID="3" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -212,25 +242,61 @@
    <FixtureVal ID="4">0,0,7,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
   </Function>
-  <Function ID="4" Type="Sequence" Name="scene1" BoundScene="3">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+  <Function ID="4" Type="EFX" Name="_scene2_2">
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="34">1:0,255,4,255,5,255:2:4,255,5,255:3:0,255:7:0,255,1,255:8:2,255,3,255:9:0,255,2,255,3,255,12,255</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:0,255,4,255,5,255:3:0,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
-   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:3:0,255:6:0,100,1,255:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255</Step>
-   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="30">1:4,255,5,255:2:4,255,5,255:3:0,255:4:0,255,7,207:7:0,255,1,255:8:2,255,3,255:9:2,255,3,255:10:0,100,1,255:11:0,100,1,255</Step>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
   </Function>
   <Function ID="5" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="6" Type="Scene" Name="scene3_02">
+  <Function ID="6" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1"/>
-   <FixtureVal ID="2"/>
-   <FixtureVal ID="8"/>
-   <FixtureVal ID="9"/>
+   <FixtureVal ID="8">0,0,2,0,3,0,12,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0</FixtureVal>
+   <FixtureVal ID="2">0,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0</FixtureVal>
+   <FixtureVal ID="0">0,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="5">0,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0</FixtureVal>
+   <FixtureVal ID="1">0,0,4,0,5,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0</FixtureVal>
+   <FixtureVal ID="9">0,0,2,0,3,0,12,0</FixtureVal>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="3"/>
+   <FixtureGroup ID="4"/>
   </Function>
   <Function ID="7" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -253,25 +319,19 @@
   <Function ID="10" Type="Show" Name="main">
    <TimeDivision Type="Time" BPM="120"/>
    <Track ID="0" Name="Track 1" isMute="0">
-    <ShowFunction ID="4" StartTime="0" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="4" StartTime="2000" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="4" StartTime="4200" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="4" StartTime="6400" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="4" StartTime="8600" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="4" StartTime="10800" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="4" StartTime="13000" Duration="2000" Color="#646464"/>
     <ShowFunction ID="1" StartTime="17000" Duration="6763" Color="#646464"/>
     <ShowFunction ID="9" StartTime="35840" Duration="5000" Color="#646464"/>
     <ShowFunction ID="0" StartTime="41698" Duration="5000" Color="#646464"/>
+    <ShowFunction ID="16" StartTime="1754" Duration="2000" Color="#646464"/>
    </Track>
   </Function>
-  <Function ID="11" Type="Chaser" Name="scene3">
-   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+  <Function ID="11" Type="Sequence" Name="scene3" BoundScene="6">
+   <Speed FadeIn="0" FadeOut="0" Duration="350"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">2</Step>
-   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">6</Step>
+   <Step Number="0" FadeIn="0" Hold="350" FadeOut="0" Values="29"/>
+   <Step Number="1" FadeIn="0" Hold="350" FadeOut="0" Values="29">0:0,255,4,255,5,255:1:0,255,4,255,5,255:2:0,255,4,255,5,255,6,255:5:0,255,4,255,5,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
   </Function>
   <Function ID="12" Type="RGBMatrix" Name="RGB_sample">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
@@ -287,7 +347,41 @@
    <FixtureGroup>0</FixtureGroup>
    <Property Name="orientation" Value="Horizontal"/>
   </Function>
-  <Function ID="13" Type="EFX" Name="New EFX 13">
+  <Function ID="13" Type="Collection" Name="scene2">
+   <Step Number="0">1</Step>
+   <Step Number="1">4</Step>
+  </Function>
+  <Function ID="14" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="3"/>
+   <FixtureGroup ID="4"/>
+  </Function>
+  <Function ID="15" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,0,1,0,2,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0</FixtureVal>
+   <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0</FixtureVal>
+   <FixtureVal ID="0">0,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="5">0,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0</FixtureVal>
+   <FixtureVal ID="1">0,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0</FixtureVal>
+   <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+  </Function>
+  <Function ID="16" Type="Sequence" Name="scene1" BoundScene="15">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:4,255,5,255:2:0,255,4,255,5,255:5:4,255,5,255:7:1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:0,255,4,255,5,255:1:4,255,5,255:2:4,255,5,255:5:4,255,5,255:6:1,255:8:2,255,3,255,12,255:9:2,255,3,255</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:4,255,5,255:2:4,255,5,255:5:0,255,4,255,5,255:8:2,255,3,255,12,255:9:2,255,3,255:10:1,255</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:0,255,4,255,5,255:2:4,255,5,255:5:4,255,5,255:8:2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:11:1,255</Step>
+  </Function>
+  <Function ID="17" Type="EFX" Name="_scene4_2">
    <Fixture>
     <ID>3</ID>
     <Head>0</Head>
@@ -306,14 +400,14 @@
    <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm>Square</Algorithm>
+   <Algorithm>Circle</Algorithm>
    <Width>127</Width>
    <Height>127</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>123</Offset>
+    <Offset>127</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
@@ -322,6 +416,61 @@
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
+  </Function>
+  <Function ID="18" Type="Scene" Name="_scene4_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,150</FixtureVal>
+   <FixtureVal ID="10">0,150</FixtureVal>
+   <FixtureVal ID="3">0,150,7,50</FixtureVal>
+   <FixtureVal ID="4">0,150,7,50</FixtureVal>
+   <FixtureVal ID="0">0,150,4,200,6,255</FixtureVal>
+   <FixtureVal ID="5">0,150,4,200,6,255</FixtureVal>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="3"/>
+  </Function>
+  <Function ID="19" Type="Collection" Name="scene4">
+   <Step Number="0">17</Step>
+   <Step Number="1">18</Step>
+  </Function>
+  <Function ID="20" Type="EFX" Name="_scene6_2">
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="21" Type="Collection" Name="scene6">
+   <Step Number="0">0</Step>
+   <Step Number="1">20</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -335,11 +484,11 @@
    <FxItem ID="3" XPos="2701" YPos="0" ZPos="1489"/>
    <FxItem ID="4" XPos="8041" YPos="0" ZPos="1481"/>
    <FxItem ID="5" XPos="8011" YPos="0" ZPos="4874" XRot="-120" YRot="-40"/>
-   <FxItem ID="6" XPos="1238.93" YPos="0" ZPos="345.997" XRot="120"/>
+   <FxItem ID="6" XPos="921" YPos="1000" ZPos="3229" XRot="90" YRot="-90"/>
    <FxItem ID="7" XPos="807.882" YPos="0" ZPos="327.121" XRot="120"/>
-   <FxItem ID="8" XPos="282.88" YPos="2500" ZPos="253.679" XRot="30" YRot="15"/>
-   <FxItem ID="9" XPos="10362.4" YPos="2500" ZPos="273.521" XRot="30" YRot="-15"/>
-   <FxItem ID="10" XPos="9300.17" YPos="0" ZPos="286.355" XRot="120"/>
+   <FxItem ID="8" XPos="282.88" YPos="2500" ZPos="253.679" XRot="30" YRot="-15"/>
+   <FxItem ID="9" XPos="10362.4" YPos="2500" ZPos="273.521" XRot="30" YRot="15"/>
+   <FxItem ID="10" XPos="9713" YPos="1000" ZPos="3093" XRot="90" YRot="90"/>
    <FxItem ID="11" XPos="9842.27" YPos="0" ZPos="296.569" XRot="120"/>
    <FxItem ID="12" XPos="4637.68" YPos="1000" ZPos="1496.99" XRot="90"/>
    <FxItem ID="13" XPos="5080.13" YPos="1000" ZPos="1506.78" XRot="90"/>
