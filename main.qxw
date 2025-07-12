@@ -229,6 +229,23 @@
    <FixtureVal ID="3">0,255</FixtureVal>
    <FixtureVal ID="4">0,255</FixtureVal>
   </Function>
+  <Function ID="2" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0</FixtureVal>
+   <FixtureVal ID="2">0,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0</FixtureVal>
+   <FixtureVal ID="0">0,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="5">0,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0</FixtureVal>
+   <FixtureVal ID="1">0,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0</FixtureVal>
+   <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="3"/>
+   <FixtureGroup ID="4"/>
+  </Function>
   <Function ID="3" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">0,0,4,0,5,0,6,0</FixtureVal>
@@ -319,10 +336,32 @@
   <Function ID="10" Type="Show" Name="main">
    <TimeDivision Type="Time" BPM="120"/>
    <Track ID="0" Name="Track 1" isMute="0">
-    <ShowFunction ID="1" StartTime="17000" Duration="6763" Color="#646464"/>
-    <ShowFunction ID="9" StartTime="35840" Duration="5000" Color="#646464"/>
-    <ShowFunction ID="0" StartTime="41698" Duration="5000" Color="#646464"/>
-    <ShowFunction ID="16" StartTime="1754" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="16" StartTime="0" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="16" StartTime="2100" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="16" StartTime="4200" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="16" StartTime="6300" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="16" StartTime="8400" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="16" StartTime="10500" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="16" StartTime="12600" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="16" StartTime="14700" Duration="2000" Color="#646464"/>
+    <ShowFunction ID="11" StartTime="25000" Duration="700" Color="#646464"/>
+    <ShowFunction ID="11" StartTime="25000" Duration="700" Color="#646464"/>
+    <ShowFunction ID="11" StartTime="25800" Duration="700" Color="#646464"/>
+    <ShowFunction ID="11" StartTime="26400" Duration="700" Color="#646464"/>
+    <ShowFunction ID="11" StartTime="27200" Duration="700" Color="#646464"/>
+    <ShowFunction ID="11" StartTime="28000" Duration="700" Color="#646464"/>
+    <ShowFunction ID="11" StartTime="28800" Duration="700" Color="#646464"/>
+    <ShowFunction ID="19" StartTime="30000" Duration="5509" Color="#646464"/>
+    <ShowFunction ID="9" StartTime="36000" Duration="1000" Color="#646464"/>
+    <ShowFunction ID="9" StartTime="37100" Duration="1000" Color="#646464"/>
+    <ShowFunction ID="22" StartTime="45000" Duration="300" Color="#646464"/>
+    <ShowFunction ID="21" StartTime="45500" Duration="14000" Color="#646464"/>
+    <ShowFunction ID="21" StartTime="38364" Duration="6363" Color="#646464"/>
+    <ShowFunction ID="13" StartTime="17000" Duration="7950" Color="#646464"/>
+    <ShowFunction ID="22" StartTime="59526" Duration="300" Color="#646464"/>
+    <ShowFunction ID="21" StartTime="60092" Duration="5117" Color="#646464"/>
+    <ShowFunction ID="9" StartTime="34799" Duration="1000" Color="#646464"/>
+    <ShowFunction ID="24" StartTime="65524" Duration="23847" Color="#646464"/>
    </Track>
   </Function>
   <Function ID="11" Type="Sequence" Name="scene3" BoundScene="6">
@@ -471,6 +510,74 @@
   <Function ID="21" Type="Collection" Name="scene6">
    <Step Number="0">0</Step>
    <Step Number="1">20</Step>
+  </Function>
+  <Function ID="22" Type="Sequence" Name="scene8" BoundScene="2">
+   <Speed FadeIn="0" FadeOut="0" Duration="100"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="100" FadeOut="0" Values="35"/>
+   <Step Number="1" FadeIn="0" Hold="100" FadeOut="0" Values="35">0:0,255,4,255,5,255,6,255:1:0,255,4,255,5,255,6,255:2:0,255,4,255,5,255,6,255,7,255:5:0,255,4,255,5,255,6,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,4,255,12,255:9:0,255,2,255,3,255,4,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
+   <Step Number="2" FadeIn="0" Hold="100" FadeOut="0" Values="35"/>
+  </Function>
+  <Function ID="23" Type="Scene" Name="_scene9_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,7,200,8,100</FixtureVal>
+   <FixtureVal ID="4">0,255,7,200,8,100</FixtureVal>
+   <FixtureVal ID="8">0,255,2,255,3,255,4,255,12,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,255</FixtureVal>
+   <FixtureVal ID="2">0,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="6">0,255,1,255</FixtureVal>
+   <FixtureVal ID="0">0,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="5">0,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="10">0,255,1,255</FixtureVal>
+   <FixtureVal ID="1">0,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="11">0,255,1,255</FixtureVal>
+   <FixtureVal ID="9">0,255,2,255,3,255,4,255,5,255,12,255</FixtureVal>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="3"/>
+   <FixtureGroup ID="4"/>
+  </Function>
+  <Function ID="24" Type="Collection" Name="scene9">
+   <Step Number="0">23</Step>
+   <Step Number="1">25</Step>
+  </Function>
+  <Function ID="25" Type="EFX" Name="_scene9_2">
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Eight</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
