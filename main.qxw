@@ -23,7 +23,7 @@
    <ID>0</ID>
    <Name>LED par-light (4in1/RGBW) [1]</Name>
    <Universe>0</Universe>
-   <Address>80</Address>
+   <Address>55</Address>
    <Channels>8</Channels>
   </Fixture>
   <Fixture>
@@ -33,7 +33,7 @@
    <ID>1</ID>
    <Name>LED par-light (4in1/RGBW DX) [2]</Name>
    <Universe>0</Universe>
-   <Address>72</Address>
+   <Address>73</Address>
    <Channels>8</Channels>
   </Fixture>
   <Fixture>
@@ -43,7 +43,7 @@
    <ID>2</ID>
    <Name>LED par-light (4in1/RGBW DX) [3]</Name>
    <Universe>0</Universe>
-   <Address>26</Address>
+   <Address>30</Address>
    <Channels>8</Channels>
   </Fixture>
   <Fixture>
@@ -53,7 +53,7 @@
    <ID>3</ID>
    <Name>IM-MH90S [4]</Name>
    <Universe>0</Universe>
-   <Address>36</Address>
+   <Address>38</Address>
    <Channels>15</Channels>
   </Fixture>
   <Fixture>
@@ -63,7 +63,7 @@
    <ID>4</ID>
    <Name>IM-MH90S [5]</Name>
    <Universe>0</Universe>
-   <Address>55</Address>
+   <Address>81</Address>
    <Channels>15</Channels>
   </Fixture>
   <Fixture>
@@ -73,7 +73,7 @@
    <ID>5</ID>
    <Name>LED par-light (4in1/RGBW) [6]</Name>
    <Universe>0</Universe>
-   <Address>88</Address>
+   <Address>63</Address>
    <Channels>8</Channels>
   </Fixture>
   <Fixture>
@@ -83,7 +83,7 @@
    <ID>6</ID>
    <Name>LED par-light (standard) [7]</Name>
    <Universe>0</Universe>
-   <Address>153</Address>
+   <Address>53</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
@@ -93,7 +93,7 @@
    <ID>7</ID>
    <Name>LED par-light (standard) [8]</Name>
    <Universe>0</Universe>
-   <Address>51</Address>
+   <Address>15</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
@@ -103,7 +103,7 @@
    <ID>8</ID>
    <Name>HPAR64-9 [9]</Name>
    <Universe>0</Universe>
-   <Address>13</Address>
+   <Address>17</Address>
    <Channels>13</Channels>
   </Fixture>
   <Fixture>
@@ -123,7 +123,7 @@
    <ID>10</ID>
    <Name>LED par-light (standard) [11]</Name>
    <Universe>0</Universe>
-   <Address>53</Address>
+   <Address>71</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
@@ -133,7 +133,7 @@
    <ID>11</ID>
    <Name>LED par-light (standard) [12]</Name>
    <Universe>0</Universe>
-   <Address>70</Address>
+   <Address>13</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
@@ -143,7 +143,7 @@
    <ID>12</ID>
    <Name>ORION WH [13]</Name>
    <Universe>0</Universe>
-   <Address>34</Address>
+   <Address>100</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
@@ -153,7 +153,7 @@
    <ID>13</ID>
    <Name>ORION WH [14]</Name>
    <Universe>0</Universe>
-   <Address>96</Address>
+   <Address>98</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
@@ -163,7 +163,7 @@
    <ID>14</ID>
    <Name>ORION WH [15]</Name>
    <Universe>0</Universe>
-   <Address>98</Address>
+   <Address>96</Address>
    <Channels>2</Channels>
   </Fixture>
   <FixtureGroup ID="0">
@@ -333,7 +333,7 @@
    <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="18">2:0,255,4,255,5,255:8:0,255,2,255,3,255,12,255</Step>
    <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="18">1:0,255,4,255,5,255:9:0,255,2,255,3,255,12,255</Step>
   </Function>
-  <Function ID="10" Type="Show" Name="main" Path="identity">
+  <Function ID="10" Type="Show" Name="identity" Path="identity">
    <TimeDivision Type="Time" BPM="120"/>
    <Track ID="0" Name="Track 1" isMute="0">
     <ShowFunction ID="16" StartTime="0" Duration="2000" Color="#646464"/>
@@ -371,20 +371,6 @@
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="350" FadeOut="0" Values="29"/>
    <Step Number="1" FadeIn="0" Hold="350" FadeOut="0" Values="29">0:0,255,4,255,5,255:1:0,255,4,255,5,255:2:0,255,4,255,5,255,6,255:5:0,255,4,255,5,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
-  </Function>
-  <Function ID="12" Type="RGBMatrix" Name="RGB_sample">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Opposite</Algorithm>
-   <Color Index="0">4294901760</Color>
-   <Color Index="1">4278190335</Color>
-   <Color Index="2">4278190080</Color>
-   <Color Index="3">4278190080</Color>
-   <Color Index="4">4278190080</Color>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="orientation" Value="Horizontal"/>
   </Function>
   <Function ID="13" Type="Collection" Name="scene2" Path="identity">
    <Step Number="0">1</Step>
@@ -579,6 +565,68 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
+  <Function ID="26" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="27" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,0,2,0,3,0,4,0,5,0,12,0</FixtureVal>
+   <FixtureVal ID="7">0,0</FixtureVal>
+   <FixtureVal ID="2">0,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="1">0,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="11">0,0</FixtureVal>
+   <FixtureVal ID="9">0,0,2,0,3,0,4,0,5,0,12,0</FixtureVal>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="4"/>
+  </Function>
+  <Function ID="28" Type="Sequence" Name="scene1" Path="baibaifight" BoundScene="27">
+   <Speed FadeIn="0" FadeOut="0" Duration="250"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="24"/>
+   <Step Number="1" FadeIn="0" Hold="250" FadeOut="0" Values="24">1:0,255,4,255,5,192,6,203,7,120:2:0,255,4,255,5,192,6,203,7,120:7:0,255:8:0,255,2,255,3,192,4,203,5,120,12,255:9:0,255,2,255,3,192,4,203,5,120,12,255:11:0,255</Step>
+  </Function>
+  <Function ID="29" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureVal ID="7">0,0</FixtureVal>
+   <FixtureVal ID="2">0,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="1">0,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="11">0,0</FixtureVal>
+   <FixtureVal ID="9">0,0,2,0,3,0,4,0,5,0,12,0</FixtureVal>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="4"/>
+  </Function>
+  <Function ID="30" Type="Sequence" Name="scene2" Path="baibaifight" BoundScene="29">
+   <Speed FadeIn="0" FadeOut="0" Duration="250"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="23"/>
+   <Step Number="1" FadeIn="0" Hold="250" FadeOut="0" Values="23">1:0,255,4,135,5,206,6,250:2:0,255,4,135,5,206,6,250:7:0,255:8:0,255,2,135,3,206,4,250,12,255:9:0,255,2,135,3,206,4,250,12,255:11:0,255</Step>
+  </Function>
+  <Function ID="31" Type="Show" Name="baibaifight" Path="baibaifight">
+   <TimeDivision Type="Time" BPM="120"/>
+   <Track ID="0" Name="Track 1" isMute="0">
+    <ShowFunction ID="28" StartTime="3451" Duration="500" Color="#646464"/>
+    <ShowFunction ID="30" StartTime="10128" Duration="500" Color="#646464"/>
+   </Track>
+  </Function>
+  <Function ID="32" Type="Chaser" Name="identity_chaser" Path="identity">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">16</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">13</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">11</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">19</Step>
+   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0">9</Step>
+   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0">21</Step>
+   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">22</Step>
+   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">24</Step>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -613,6 +661,10 @@
    <ShowEnableButton>True</ShowEnableButton>
    <Collapsed>False</Collapsed>
    <Disabled>False</Disabled>
+   <CueList Caption="main" ID="0">
+    <WindowState Visible="True" X="276" Y="180" Width="826" Height="576"/>
+    <Chaser>32</Chaser>
+   </CueList>
   </Frame>
   <Frame Caption="Page 2" ID="1">
    <Appearance>
