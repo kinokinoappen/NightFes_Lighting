@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SHOWMGR">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FIXANDFUNC">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>5.0.0 GIT</Version>
@@ -207,14 +207,14 @@
    <Head X="1" Y="0" Fixture="13">0</Head>
    <Head X="0" Y="1" Fixture="14">0</Head>
   </FixtureGroup>
-  <Function ID="0" Type="Scene" Name="_scene6_1">
+  <Function ID="0" Type="Scene" Name="_scene6_1" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,255,4,14,5,101,6,255,7,0</FixtureVal>
    <FixtureVal ID="2">0,255,4,14,5,101,6,255,7,0</FixtureVal>
    <FixtureVal ID="3">0,150,7,30</FixtureVal>
    <FixtureVal ID="4">0,150,7,30</FixtureVal>
   </Function>
-  <Function ID="1" Type="Scene" Name="_scene2_1">
+  <Function ID="1" Type="Scene" Name="_scene2_1" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">0,255,4,255,5,255,6,0,7,0</FixtureVal>
    <FixtureVal ID="1">0,255,4,255,5,255,6,0,7,0</FixtureVal>
@@ -259,7 +259,7 @@
    <FixtureVal ID="4">0,0,7,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
   </Function>
-  <Function ID="4" Type="EFX" Name="_scene2_2">
+  <Function ID="4" Type="EFX" Name="_scene2_2" Path="identity">
    <Fixture>
     <ID>3</ID>
     <Head>0</Head>
@@ -325,7 +325,7 @@
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
    <FixtureVal ID="2">0,0,4,0,5,0,6,0</FixtureVal>
   </Function>
-  <Function ID="9" Type="Sequence" Name="scene5" BoundScene="8">
+  <Function ID="9" Type="Sequence" Name="scene5" Path="identity" BoundScene="8">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -333,7 +333,7 @@
    <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="18">2:0,255,4,255,5,255:8:0,255,2,255,3,255,12,255</Step>
    <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="18">1:0,255,4,255,5,255:9:0,255,2,255,3,255,12,255</Step>
   </Function>
-  <Function ID="10" Type="Show" Name="main">
+  <Function ID="10" Type="Show" Name="main" Path="identity">
    <TimeDivision Type="Time" BPM="120"/>
    <Track ID="0" Name="Track 1" isMute="0">
     <ShowFunction ID="16" StartTime="0" Duration="2000" Color="#646464"/>
@@ -364,7 +364,7 @@
     <ShowFunction ID="24" StartTime="65524" Duration="23847" Color="#646464"/>
    </Track>
   </Function>
-  <Function ID="11" Type="Sequence" Name="scene3" BoundScene="6">
+  <Function ID="11" Type="Sequence" Name="scene3" Path="identity" BoundScene="6">
    <Speed FadeIn="0" FadeOut="0" Duration="350"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -386,7 +386,7 @@
    <FixtureGroup>0</FixtureGroup>
    <Property Name="orientation" Value="Horizontal"/>
   </Function>
-  <Function ID="13" Type="Collection" Name="scene2">
+  <Function ID="13" Type="Collection" Name="scene2" Path="identity">
    <Step Number="0">1</Step>
    <Step Number="1">4</Step>
   </Function>
@@ -410,7 +410,7 @@
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
   </Function>
-  <Function ID="16" Type="Sequence" Name="scene1" BoundScene="15">
+  <Function ID="16" Type="Sequence" Name="scene1" Path="identity" BoundScene="15">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -420,7 +420,7 @@
    <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:4,255,5,255:2:4,255,5,255:5:0,255,4,255,5,255:8:2,255,3,255,12,255:9:2,255,3,255:10:1,255</Step>
    <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:0,255,4,255,5,255:2:4,255,5,255:5:4,255,5,255:8:2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:11:1,255</Step>
   </Function>
-  <Function ID="17" Type="EFX" Name="_scene4_2">
+  <Function ID="17" Type="EFX" Name="_scene4_2" Path="identity">
    <Fixture>
     <ID>3</ID>
     <Head>0</Head>
@@ -456,7 +456,7 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="18" Type="Scene" Name="_scene4_1">
+  <Function ID="18" Type="Scene" Name="_scene4_1" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="6">0,150</FixtureVal>
    <FixtureVal ID="10">0,150</FixtureVal>
@@ -467,11 +467,11 @@
    <FixtureGroup ID="2"/>
    <FixtureGroup ID="3"/>
   </Function>
-  <Function ID="19" Type="Collection" Name="scene4">
+  <Function ID="19" Type="Collection" Name="scene4" Path="identity">
    <Step Number="0">17</Step>
    <Step Number="1">18</Step>
   </Function>
-  <Function ID="20" Type="EFX" Name="_scene6_2">
+  <Function ID="20" Type="EFX" Name="_scene6_2" Path="identity">
    <Fixture>
     <ID>3</ID>
     <Head>0</Head>
@@ -507,11 +507,11 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
-  <Function ID="21" Type="Collection" Name="scene6">
+  <Function ID="21" Type="Collection" Name="scene6" Path="identity">
    <Step Number="0">0</Step>
    <Step Number="1">20</Step>
   </Function>
-  <Function ID="22" Type="Sequence" Name="scene8" BoundScene="2">
+  <Function ID="22" Type="Sequence" Name="scene8" Path="identity" BoundScene="2">
    <Speed FadeIn="0" FadeOut="0" Duration="100"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -520,7 +520,7 @@
    <Step Number="1" FadeIn="0" Hold="100" FadeOut="0" Values="35">0:0,255,4,255,5,255,6,255:1:0,255,4,255,5,255,6,255:2:0,255,4,255,5,255,6,255,7,255:5:0,255,4,255,5,255,6,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,4,255,12,255:9:0,255,2,255,3,255,4,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
    <Step Number="2" FadeIn="0" Hold="100" FadeOut="0" Values="35"/>
   </Function>
-  <Function ID="23" Type="Scene" Name="_scene9_1">
+  <Function ID="23" Type="Scene" Name="_scene9_1" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,255,7,200,8,100</FixtureVal>
    <FixtureVal ID="4">0,255,7,200,8,100</FixtureVal>
@@ -539,11 +539,11 @@
    <FixtureGroup ID="3"/>
    <FixtureGroup ID="4"/>
   </Function>
-  <Function ID="24" Type="Collection" Name="scene9">
+  <Function ID="24" Type="Collection" Name="scene9" Path="identity">
    <Step Number="0">23</Step>
    <Step Number="1">25</Step>
   </Function>
-  <Function ID="25" Type="EFX" Name="_scene9_2">
+  <Function ID="25" Type="EFX" Name="_scene9_2" Path="identity">
    <Fixture>
     <ID>3</ID>
     <Head>0</Head>
