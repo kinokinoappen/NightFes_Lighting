@@ -10,7 +10,9 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Internal" BPM="120"/>
    <Universe Name="Universe 1" ID="0" Passthrough="True">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A10OE18V)" Line="0">
+     <PluginParameters UniverseChannels="102"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -24,26 +26,6 @@
    <Name>LED par-light (4in1/RGBW) [1]</Name>
    <Universe>0</Universe>
    <Address>55</Address>
-   <Channels>8</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Glint</Manufacturer>
-   <Model>LED par-light (4in1/RGBW DX)</Model>
-   <Mode>8ch A***</Mode>
-   <ID>1</ID>
-   <Name>LED par-light (4in1/RGBW DX) [2]</Name>
-   <Universe>0</Universe>
-   <Address>73</Address>
-   <Channels>8</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Glint</Manufacturer>
-   <Model>LED par-light (4in1/RGBW DX)</Model>
-   <Mode>8ch A***</Mode>
-   <ID>2</ID>
-   <Name>LED par-light (4in1/RGBW DX) [3]</Name>
-   <Universe>0</Universe>
-   <Address>30</Address>
    <Channels>8</Channels>
   </Fixture>
   <Fixture>
@@ -137,33 +119,33 @@
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>StageEvolution</Manufacturer>
-   <Model>ORION WH</Model>
-   <Mode>2ch</Mode>
+   <Manufacturer>Glint</Manufacturer>
+   <Model>LED par-light (standard)</Model>
+   <Mode>2ch d***</Mode>
    <ID>12</ID>
-   <Name>ORION WH [13]</Name>
+   <Name>LED par-light (standard) [13]</Name>
    <Universe>0</Universe>
-   <Address>100</Address>
+   <Address>96</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>StageEvolution</Manufacturer>
-   <Model>ORION WH</Model>
-   <Mode>2ch</Mode>
+   <Manufacturer>Glint</Manufacturer>
+   <Model>LED par-light (standard)</Model>
+   <Mode>2ch d***</Mode>
    <ID>13</ID>
-   <Name>ORION WH [14]</Name>
+   <Name>LED par-light (standard) [14]</Name>
    <Universe>0</Universe>
    <Address>98</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>StageEvolution</Manufacturer>
-   <Model>ORION WH</Model>
-   <Mode>2ch</Mode>
+   <Manufacturer>Glint</Manufacturer>
+   <Model>LED par-light (standard)</Model>
+   <Mode>2ch d***</Mode>
    <ID>14</ID>
-   <Name>ORION WH [15]</Name>
+   <Name>LED par-light (standard) [15]</Name>
    <Universe>0</Universe>
-   <Address>96</Address>
+   <Address>100</Address>
    <Channels>2</Channels>
   </Fixture>
   <FixtureGroup ID="0">
@@ -179,7 +161,6 @@
    <Size X="2" Y="2"/>
    <Head X="0" Y="0" Fixture="8">0</Head>
    <Head X="1" Y="0" Fixture="7">0</Head>
-   <Head X="0" Y="1" Fixture="2">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="2">
    <Name>lowerleft</Name>
@@ -196,28 +177,20 @@
   <FixtureGroup ID="4">
    <Name>upperright</Name>
    <Size X="2" Y="2"/>
-   <Head X="0" Y="0" Fixture="1">0</Head>
    <Head X="1" Y="0" Fixture="11">0</Head>
    <Head X="0" Y="1" Fixture="9">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="5">
    <Name>back</Name>
    <Size X="2" Y="2"/>
-   <Head X="0" Y="0" Fixture="12">0</Head>
-   <Head X="1" Y="0" Fixture="13">0</Head>
-   <Head X="0" Y="1" Fixture="14">0</Head>
   </FixtureGroup>
   <Function ID="0" Type="Scene" Name="_scene6_1" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,255,4,14,5,101,6,255,7,0</FixtureVal>
-   <FixtureVal ID="2">0,255,4,14,5,101,6,255,7,0</FixtureVal>
    <FixtureVal ID="3">0,150,7,30</FixtureVal>
    <FixtureVal ID="4">0,150,7,30</FixtureVal>
   </Function>
   <Function ID="1" Type="Scene" Name="_scene2_1" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">0,255,4,255,5,255,6,0,7,0</FixtureVal>
-   <FixtureVal ID="1">0,255,4,255,5,255,6,0,7,0</FixtureVal>
    <FixtureVal ID="8">0,255,2,255,3,255,4,0,5,255,6,255,7,255,8,0,12,255</FixtureVal>
    <FixtureVal ID="9">0,255,2,255,3,255,4,0,5,255,6,255,7,255,8,0,12,150</FixtureVal>
    <FixtureVal ID="6">0,255,1,255</FixtureVal>
@@ -233,12 +206,10 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
    <FixtureVal ID="7">0,0,1,0</FixtureVal>
-   <FixtureVal ID="2">0,0,4,0,5,0,6,0,7,0</FixtureVal>
    <FixtureVal ID="6">0,0,1,0</FixtureVal>
    <FixtureVal ID="0">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="5">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="10">0,0,1,0</FixtureVal>
-   <FixtureVal ID="1">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
    <FixtureGroup ID="1"/>
@@ -248,10 +219,8 @@
   </Function>
   <Function ID="3" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
-   <FixtureVal ID="1">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="6">0,0,1,0</FixtureVal>
    <FixtureVal ID="3">0,0,7,0</FixtureVal>
    <FixtureVal ID="7">0,0,1,0</FixtureVal>
@@ -302,12 +271,10 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,0,2,0,3,0,12,0</FixtureVal>
    <FixtureVal ID="7">0,0,1,0</FixtureVal>
-   <FixtureVal ID="2">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="6">0,0,1,0</FixtureVal>
    <FixtureVal ID="0">0,0,4,0,5,0</FixtureVal>
    <FixtureVal ID="5">0,0,4,0,5,0</FixtureVal>
    <FixtureVal ID="10">0,0,1,0</FixtureVal>
-   <FixtureVal ID="1">0,0,4,0,5,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,12,0</FixtureVal>
    <FixtureGroup ID="1"/>
@@ -320,10 +287,8 @@
   </Function>
   <Function ID="8" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
-   <FixtureVal ID="2">0,0,4,0,5,0,6,0</FixtureVal>
   </Function>
   <Function ID="9" Type="Sequence" Name="scene5" Path="identity" BoundScene="8">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
@@ -385,14 +350,12 @@
   </Function>
   <Function ID="15" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">0,0,1,0,2,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="7">0,0,1,0</FixtureVal>
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
    <FixtureVal ID="6">0,0,1,0</FixtureVal>
    <FixtureVal ID="0">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="5">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="10">0,0,1,0</FixtureVal>
-   <FixtureVal ID="1">0,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
   </Function>
@@ -512,12 +475,10 @@
    <FixtureVal ID="4">0,255,7,200,8,100</FixtureVal>
    <FixtureVal ID="8">0,255,2,255,3,255,4,255,12,255</FixtureVal>
    <FixtureVal ID="7">0,255,1,255</FixtureVal>
-   <FixtureVal ID="2">0,255,4,255,5,255,6,255,7,255</FixtureVal>
    <FixtureVal ID="6">0,255,1,255</FixtureVal>
    <FixtureVal ID="0">0,255,4,255,5,255,6,255,7,255</FixtureVal>
    <FixtureVal ID="5">0,255,4,255,5,255,6,255,7,255</FixtureVal>
    <FixtureVal ID="10">0,255,1,255</FixtureVal>
-   <FixtureVal ID="1">0,255,4,255,5,255,6,255,7,255</FixtureVal>
    <FixtureVal ID="11">0,255,1,255</FixtureVal>
    <FixtureVal ID="9">0,255,2,255,3,255,4,255,5,255,12,255</FixtureVal>
    <FixtureGroup ID="1"/>
@@ -572,8 +533,6 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,5,0,12,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
-   <FixtureVal ID="2">0,0,4,0,5,0,6,0,7,0</FixtureVal>
-   <FixtureVal ID="1">0,0,4,0,5,0,6,0,7,0</FixtureVal>
    <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,5,0,12,0</FixtureVal>
    <FixtureGroup ID="1"/>
@@ -591,8 +550,6 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
-   <FixtureVal ID="2">0,0,4,0,5,0,6,0,7,0</FixtureVal>
-   <FixtureVal ID="1">0,0,4,0,5,0,6,0,7,0</FixtureVal>
    <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,5,0,12,0</FixtureVal>
    <FixtureGroup ID="1"/>
@@ -617,15 +574,18 @@
    <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">16</Step>
-   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">13</Step>
-   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">11</Step>
-   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">19</Step>
-   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0">9</Step>
-   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0">21</Step>
-   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">22</Step>
-   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">24</Step>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="17000" FadeOut="0" Note="17">16</Step>
+   <Step Number="1" FadeIn="0" Hold="8000" FadeOut="0" Note="25">13</Step>
+   <Step Number="2" FadeIn="0" Hold="5000" FadeOut="0" Note="30">11</Step>
+   <Step Number="3" FadeIn="0" Hold="5000" FadeOut="0" Note="35">19</Step>
+   <Step Number="4" FadeIn="0" Hold="3000" FadeOut="0" Note="38">9</Step>
+   <Step Number="5" FadeIn="0" Hold="7000" FadeOut="0" Note="45">21</Step>
+   <Step Number="6" FadeIn="0" Hold="300" FadeOut="0" Note="45.3">22</Step>
+   <Step Number="7" FadeIn="0" Hold="1570" FadeOut="0" Note="60">21</Step>
+   <Step Number="8" FadeIn="0" Hold="300" FadeOut="0" Note="60">22</Step>
+   <Step Number="9" FadeIn="0" Hold="5000" FadeOut="0" Note="65">21</Step>
+   <Step Number="10" FadeIn="0" Hold="25000" FadeOut="0" Note="90">24</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -634,8 +594,6 @@
    <Grid Width="11" Height="3" Depth="6" Units="0" POV="1"/>
    <StageItem>0</StageItem>
    <FxItem ID="0" XPos="2663" YPos="0" ZPos="4993" XRot="-120" YRot="40"/>
-   <FxItem ID="1" XPos="8647.32" YPos="2500" ZPos="1467.77" XRot="55" YRot="45"/>
-   <FxItem ID="2" XPos="2039.41" YPos="2500" ZPos="1382.31" XRot="55" YRot="-45"/>
    <FxItem ID="3" XPos="2701" YPos="0" ZPos="1489"/>
    <FxItem ID="4" XPos="8041" YPos="0" ZPos="1481"/>
    <FxItem ID="5" XPos="8011" YPos="0" ZPos="4874" XRot="-120" YRot="-40"/>
@@ -645,9 +603,9 @@
    <FxItem ID="9" XPos="10362.4" YPos="2500" ZPos="273.521" XRot="30" YRot="15"/>
    <FxItem ID="10" XPos="9713" YPos="1000" ZPos="3093" XRot="90" YRot="90"/>
    <FxItem ID="11" XPos="9842.27" YPos="0" ZPos="296.569" XRot="120"/>
-   <FxItem ID="12" XPos="4637.68" YPos="1000" ZPos="1496.99" XRot="90"/>
-   <FxItem ID="13" XPos="5080.13" YPos="1000" ZPos="1506.78" XRot="90"/>
-   <FxItem ID="14" XPos="5509.9" YPos="1000" ZPos="1516.46" XRot="90"/>
+   <FxItem ID="12" XPos="5115.38" YPos="1000" ZPos="2448.82" XRot="90"/>
+   <FxItem ID="13" XPos="1692" YPos="0" ZPos="5471" XRot="-100" YRot="70"/>
+   <FxItem ID="14" XPos="8599" YPos="0" ZPos="5500" XRot="-100" YRot="-70"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
