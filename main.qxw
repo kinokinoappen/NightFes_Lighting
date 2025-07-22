@@ -10,9 +10,7 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Internal" BPM="120"/>
    <Universe Name="Universe 1" ID="0" Passthrough="True">
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A10OE18V)" Line="0">
-     <PluginParameters UniverseChannels="102"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -212,6 +210,8 @@
    <FixtureVal ID="10">0,0,1,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2"/>
    <FixtureGroup ID="1"/>
    <FixtureGroup ID="2"/>
    <FixtureGroup ID="3"/>
@@ -277,6 +277,8 @@
    <FixtureVal ID="10">0,0,1,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,12,0</FixtureVal>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2"/>
    <FixtureGroup ID="1"/>
    <FixtureGroup ID="2"/>
    <FixtureGroup ID="3"/>
@@ -289,14 +291,16 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2"/>
   </Function>
   <Function ID="9" Type="Sequence" Name="scene5" Path="identity" BoundScene="8">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="18">2:0,255,4,255,5,255:8:0,255,2,255,3,255,12,255</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="18">1:0,255,4,255,5,255:9:0,255,2,255,3,255,12,255</Step>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="10">8:0,255,2,255,3,255,12,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="10">9:0,255,2,255,3,255,12,255</Step>
   </Function>
   <Function ID="10" Type="Show" Name="identity" Path="identity">
    <TimeDivision Type="Time" BPM="120"/>
@@ -334,8 +338,16 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="350" FadeOut="0" Values="29"/>
-   <Step Number="1" FadeIn="0" Hold="350" FadeOut="0" Values="29">0:0,255,4,255,5,255:1:0,255,4,255,5,255:2:0,255,4,255,5,255,6,255:5:0,255,4,255,5,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
+   <Step Number="0" FadeIn="0" Hold="350" FadeOut="0" Values="22"/>
+   <Step Number="1" FadeIn="0" Hold="350" FadeOut="0" Values="22">0:0,255,4,255,5,255:5:0,255,4,255,5,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
+  </Function>
+  <Function ID="12" Type="Chaser" Name="baibaifight" Path="baibaifight">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">28</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">30</Step>
   </Function>
   <Function ID="13" Type="Collection" Name="scene2" Path="identity">
    <Step Number="0">1</Step>
@@ -358,16 +370,18 @@
    <FixtureVal ID="10">0,0,1,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2"/>
   </Function>
   <Function ID="16" Type="Sequence" Name="scene1" Path="identity" BoundScene="15">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:4,255,5,255:2:0,255,4,255,5,255:5:4,255,5,255:7:1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:0,255,4,255,5,255:1:4,255,5,255:2:4,255,5,255:5:4,255,5,255:6:1,255:8:2,255,3,255,12,255:9:2,255,3,255</Step>
-   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:4,255,5,255:2:4,255,5,255:5:0,255,4,255,5,255:8:2,255,3,255,12,255:9:2,255,3,255:10:1,255</Step>
-   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:0,255,4,255,5,255:2:4,255,5,255:5:4,255,5,255:8:2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:11:1,255</Step>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="26">0:4,255,5,255:5:4,255,5,255:7:1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="26">0:0,255,4,255,5,255:5:4,255,5,255:6:1,255:8:2,255,3,255,12,255:9:2,255,3,255</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="26">0:4,255,5,255:5:0,255,4,255,5,255:8:2,255,3,255,12,255:9:2,255,3,255:10:1,255</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="26">0:4,255,5,255:5:4,255,5,255:8:2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:11:1,255</Step>
   </Function>
   <Function ID="17" Type="EFX" Name="_scene4_2" Path="identity">
    <Fixture>
@@ -465,9 +479,9 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="100" FadeOut="0" Values="35"/>
-   <Step Number="1" FadeIn="0" Hold="100" FadeOut="0" Values="35">0:0,255,4,255,5,255,6,255:1:0,255,4,255,5,255,6,255:2:0,255,4,255,5,255,6,255,7,255:5:0,255,4,255,5,255,6,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,4,255,12,255:9:0,255,2,255,3,255,4,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
-   <Step Number="2" FadeIn="0" Hold="100" FadeOut="0" Values="35"/>
+   <Step Number="0" FadeIn="0" Hold="100" FadeOut="0" Values="26"/>
+   <Step Number="1" FadeIn="0" Hold="100" FadeOut="0" Values="26">0:0,255,4,255,5,255,6,255:5:0,255,4,255,5,255,6,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,4,255,12,255:9:0,255,2,255,3,255,4,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
+   <Step Number="2" FadeIn="0" Hold="100" FadeOut="0" Values="26"/>
   </Function>
   <Function ID="23" Type="Scene" Name="_scene9_1" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -543,8 +557,8 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="24"/>
-   <Step Number="1" FadeIn="0" Hold="250" FadeOut="0" Values="24">1:0,255,4,255,5,192,6,203,7,120:2:0,255,4,255,5,192,6,203,7,120:7:0,255:8:0,255,2,255,3,192,4,203,5,120,12,255:9:0,255,2,255,3,192,4,203,5,120,12,255:11:0,255</Step>
+   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="14"/>
+   <Step Number="1" FadeIn="0" Hold="250" FadeOut="0" Values="14">7:0,255:8:0,255,2,255,3,192,4,203,5,120,12,255:9:0,255,2,255,3,192,4,203,5,120,12,255:11:0,255</Step>
   </Function>
   <Function ID="29" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -560,15 +574,8 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="23"/>
-   <Step Number="1" FadeIn="0" Hold="250" FadeOut="0" Values="23">1:0,255,4,135,5,206,6,250:2:0,255,4,135,5,206,6,250:7:0,255:8:0,255,2,135,3,206,4,250,12,255:9:0,255,2,135,3,206,4,250,12,255:11:0,255</Step>
-  </Function>
-  <Function ID="31" Type="Show" Name="baibaifight" Path="baibaifight">
-   <TimeDivision Type="Time" BPM="120"/>
-   <Track ID="0" Name="Track 1" isMute="0">
-    <ShowFunction ID="28" StartTime="3451" Duration="500" Color="#646464"/>
-    <ShowFunction ID="30" StartTime="10128" Duration="500" Color="#646464"/>
-   </Track>
+   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="13"/>
+   <Step Number="1" FadeIn="0" Hold="250" FadeOut="0" Values="13">7:0,255:8:0,255,2,135,3,206,4,250,12,255:9:0,255,2,135,3,206,4,250,12,255:11:0,255</Step>
   </Function>
   <Function ID="32" Type="Chaser" Name="identity_chaser" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
