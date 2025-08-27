@@ -8,11 +8,9 @@
  </Creator>
  <Engine>
   <InputOutputMap>
-   <BeatGenerator BeatType="Internal" BPM="120"/>
+   <BeatGenerator BeatType="Internal" BPM="178"/>
    <Universe Name="Universe 1" ID="0" Passthrough="True">
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: A10OE18V)" Line="0">
-     <PluginParameters UniverseChannels="102"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -149,12 +147,14 @@
    <Channels>2</Channels>
   </Fixture>
   <FixtureGroup ID="0">
-   <Name>RGBs</Name>
-   <Size X="2" Y="2"/>
-   <Head X="0" Y="0" Fixture="8">0</Head>
-   <Head X="1" Y="0" Fixture="9">0</Head>
-   <Head X="0" Y="1" Fixture="0">0</Head>
-   <Head X="1" Y="1" Fixture="5">0</Head>
+   <Name>Standards</Name>
+   <Size X="3" Y="3"/>
+   <Head X="0" Y="0" Fixture="7">0</Head>
+   <Head X="1" Y="0" Fixture="6">0</Head>
+   <Head X="2" Y="0" Fixture="13">0</Head>
+   <Head X="0" Y="1" Fixture="14">0</Head>
+   <Head X="1" Y="1" Fixture="10">0</Head>
+   <Head X="2" Y="1" Fixture="11">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>upperleft</Name>
@@ -163,16 +163,12 @@
    <Head X="1" Y="0" Fixture="7">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="2">
-   <Name>lowerleft</Name>
+   <Name>Colors</Name>
    <Size X="2" Y="2"/>
-   <Head X="0" Y="0" Fixture="6">0</Head>
+   <Head X="0" Y="0" Fixture="8">0</Head>
    <Head X="1" Y="0" Fixture="0">0</Head>
-  </FixtureGroup>
-  <FixtureGroup ID="3">
-   <Name>lowerright</Name>
-   <Size X="2" Y="2"/>
-   <Head X="0" Y="0" Fixture="5">0</Head>
-   <Head X="1" Y="0" Fixture="10">0</Head>
+   <Head X="0" Y="1" Fixture="9">0</Head>
+   <Head X="1" Y="1" Fixture="5">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="4">
    <Name>upperright</Name>
@@ -183,6 +179,20 @@
   <FixtureGroup ID="5">
    <Name>back</Name>
    <Size X="2" Y="2"/>
+  </FixtureGroup>
+  <FixtureGroup ID="7">
+   <Name>lowerleft</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="13">0</Head>
+   <Head X="1" Y="0" Fixture="0">0</Head>
+   <Head X="0" Y="1" Fixture="6">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="8">
+   <Name>lowerright</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="5">0</Head>
+   <Head X="1" Y="0" Fixture="14">0</Head>
+   <Head X="0" Y="1" Fixture="10">0</Head>
   </FixtureGroup>
   <Function ID="0" Type="Scene" Name="_scene6_1" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -212,6 +222,8 @@
    <FixtureVal ID="10">0,0,1,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2"/>
    <FixtureGroup ID="1"/>
    <FixtureGroup ID="2"/>
    <FixtureGroup ID="3"/>
@@ -277,6 +289,8 @@
    <FixtureVal ID="10">0,0,1,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,12,0</FixtureVal>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2"/>
    <FixtureGroup ID="1"/>
    <FixtureGroup ID="2"/>
    <FixtureGroup ID="3"/>
@@ -289,53 +303,24 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2"/>
   </Function>
   <Function ID="9" Type="Sequence" Name="scene5" Path="identity" BoundScene="8">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="18">2:0,255,4,255,5,255:8:0,255,2,255,3,255,12,255</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="18">1:0,255,4,255,5,255:9:0,255,2,255,3,255,12,255</Step>
-  </Function>
-  <Function ID="10" Type="Show" Name="identity" Path="identity">
-   <TimeDivision Type="Time" BPM="120"/>
-   <Track ID="0" Name="Track 1" isMute="0">
-    <ShowFunction ID="16" StartTime="0" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="16" StartTime="2100" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="16" StartTime="4200" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="16" StartTime="6300" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="16" StartTime="8400" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="16" StartTime="10500" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="16" StartTime="12600" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="16" StartTime="14700" Duration="2000" Color="#646464"/>
-    <ShowFunction ID="11" StartTime="25000" Duration="700" Color="#646464"/>
-    <ShowFunction ID="11" StartTime="25000" Duration="700" Color="#646464"/>
-    <ShowFunction ID="11" StartTime="25800" Duration="700" Color="#646464"/>
-    <ShowFunction ID="11" StartTime="26400" Duration="700" Color="#646464"/>
-    <ShowFunction ID="11" StartTime="27200" Duration="700" Color="#646464"/>
-    <ShowFunction ID="11" StartTime="28000" Duration="700" Color="#646464"/>
-    <ShowFunction ID="11" StartTime="28800" Duration="700" Color="#646464"/>
-    <ShowFunction ID="19" StartTime="30000" Duration="5509" Color="#646464"/>
-    <ShowFunction ID="9" StartTime="36000" Duration="1000" Color="#646464"/>
-    <ShowFunction ID="9" StartTime="37100" Duration="1000" Color="#646464"/>
-    <ShowFunction ID="22" StartTime="45000" Duration="300" Color="#646464"/>
-    <ShowFunction ID="21" StartTime="45500" Duration="14000" Color="#646464"/>
-    <ShowFunction ID="21" StartTime="38364" Duration="6363" Color="#646464"/>
-    <ShowFunction ID="13" StartTime="17000" Duration="7950" Color="#646464"/>
-    <ShowFunction ID="22" StartTime="59526" Duration="300" Color="#646464"/>
-    <ShowFunction ID="21" StartTime="60092" Duration="5117" Color="#646464"/>
-    <ShowFunction ID="9" StartTime="34799" Duration="1000" Color="#646464"/>
-    <ShowFunction ID="24" StartTime="65524" Duration="23847" Color="#646464"/>
-   </Track>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="10">8:0,255,2,255,3,255,12,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="10">9:0,255,2,255,3,255,12,255</Step>
   </Function>
   <Function ID="11" Type="Sequence" Name="scene3" Path="identity" BoundScene="6">
    <Speed FadeIn="0" FadeOut="0" Duration="350"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="350" FadeOut="0" Values="29"/>
-   <Step Number="1" FadeIn="0" Hold="350" FadeOut="0" Values="29">0:0,255,4,255,5,255:1:0,255,4,255,5,255:2:0,255,4,255,5,255,6,255:5:0,255,4,255,5,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
+   <Step Number="0" FadeIn="0" Hold="350" FadeOut="0" Values="22"/>
+   <Step Number="1" FadeIn="0" Hold="350" FadeOut="0" Values="22">0:0,255,4,255,5,255:5:0,255,4,255,5,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
   </Function>
   <Function ID="13" Type="Collection" Name="scene2" Path="identity">
    <Step Number="0">1</Step>
@@ -358,16 +343,18 @@
    <FixtureVal ID="10">0,0,1,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0</FixtureVal>
    <FixtureVal ID="9">0,0,2,0,3,0,4,0,12,0</FixtureVal>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="2"/>
   </Function>
   <Function ID="16" Type="Sequence" Name="scene1" Path="identity" BoundScene="15">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:4,255,5,255:2:0,255,4,255,5,255:5:4,255,5,255:7:1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:0,255,4,255,5,255:1:4,255,5,255:2:4,255,5,255:5:4,255,5,255:6:1,255:8:2,255,3,255,12,255:9:2,255,3,255</Step>
-   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:4,255,5,255:2:4,255,5,255:5:0,255,4,255,5,255:8:2,255,3,255,12,255:9:2,255,3,255:10:1,255</Step>
-   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="36">0:4,255,5,255:1:0,255,4,255,5,255:2:4,255,5,255:5:4,255,5,255:8:2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:11:1,255</Step>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="26">0:4,255,5,255:5:4,255,5,255:7:1,255:8:0,255,2,255,3,255,12,255:9:2,255,3,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="26">0:0,255,4,255,5,255:5:4,255,5,255:6:1,255:8:2,255,3,255,12,255:9:2,255,3,255</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="26">0:4,255,5,255:5:0,255,4,255,5,255:8:2,255,3,255,12,255:9:2,255,3,255:10:1,255</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="26">0:4,255,5,255:5:4,255,5,255:8:2,255,3,255,12,255:9:0,255,2,255,3,255,12,255:11:1,255</Step>
   </Function>
   <Function ID="17" Type="EFX" Name="_scene4_2" Path="identity">
    <Fixture>
@@ -465,9 +452,9 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="100" FadeOut="0" Values="35"/>
-   <Step Number="1" FadeIn="0" Hold="100" FadeOut="0" Values="35">0:0,255,4,255,5,255,6,255:1:0,255,4,255,5,255,6,255:2:0,255,4,255,5,255,6,255,7,255:5:0,255,4,255,5,255,6,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,4,255,12,255:9:0,255,2,255,3,255,4,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
-   <Step Number="2" FadeIn="0" Hold="100" FadeOut="0" Values="35"/>
+   <Step Number="0" FadeIn="0" Hold="100" FadeOut="0" Values="26"/>
+   <Step Number="1" FadeIn="0" Hold="100" FadeOut="0" Values="26">0:0,255,4,255,5,255,6,255:5:0,255,4,255,5,255,6,255:6:0,255,1,255:7:0,255,1,255:8:0,255,2,255,3,255,4,255,12,255:9:0,255,2,255,3,255,4,255,12,255:10:0,255,1,255:11:0,255,1,255</Step>
+   <Step Number="2" FadeIn="0" Hold="100" FadeOut="0" Values="26"/>
   </Function>
   <Function ID="23" Type="Scene" Name="_scene9_1" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -538,14 +525,6 @@
    <FixtureGroup ID="1"/>
    <FixtureGroup ID="4"/>
   </Function>
-  <Function ID="28" Type="Sequence" Name="scene1" Path="baibaifight" BoundScene="27">
-   <Speed FadeIn="0" FadeOut="0" Duration="250"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="24"/>
-   <Step Number="1" FadeIn="0" Hold="250" FadeOut="0" Values="24">1:0,255,4,255,5,192,6,203,7,120:2:0,255,4,255,5,192,6,203,7,120:7:0,255:8:0,255,2,255,3,192,4,203,5,120,12,255:9:0,255,2,255,3,192,4,203,5,120,12,255:11:0,255</Step>
-  </Function>
   <Function ID="29" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="8">0,0,2,0,3,0,4,0,12,0</FixtureVal>
@@ -555,22 +534,24 @@
    <FixtureGroup ID="1"/>
    <FixtureGroup ID="4"/>
   </Function>
-  <Function ID="30" Type="Sequence" Name="scene2" Path="baibaifight" BoundScene="29">
-   <Speed FadeIn="0" FadeOut="0" Duration="250"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0" Values="23"/>
-   <Step Number="1" FadeIn="0" Hold="250" FadeOut="0" Values="23">1:0,255,4,135,5,206,6,250:2:0,255,4,135,5,206,6,250:7:0,255:8:0,255,2,135,3,206,4,250,12,255:9:0,255,2,135,3,206,4,250,12,255:11:0,255</Step>
+  <Function ID="31" Type="Scene" Name="hr_s7" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,4,30,7,70</FixtureVal>
+   <FixtureVal ID="4">0,255,4,30,7,70</FixtureVal>
+   <FixtureVal ID="8">0,255,4,255,12,255</FixtureVal>
+   <FixtureVal ID="0">0,255,6,255</FixtureVal>
+   <FixtureVal ID="9">0,255,4,255,12,255</FixtureVal>
+   <FixtureVal ID="5">0,255,6,255</FixtureVal>
+   <FixtureVal ID="7">0,255</FixtureVal>
+   <FixtureVal ID="6">0,255</FixtureVal>
+   <FixtureVal ID="13">0,255</FixtureVal>
+   <FixtureVal ID="14">0,255</FixtureVal>
+   <FixtureVal ID="10">0,255</FixtureVal>
+   <FixtureVal ID="11">0,255</FixtureVal>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="0"/>
   </Function>
-  <Function ID="31" Type="Show" Name="baibaifight" Path="baibaifight">
-   <TimeDivision Type="Time" BPM="120"/>
-   <Track ID="0" Name="Track 1" isMute="0">
-    <ShowFunction ID="28" StartTime="3451" Duration="500" Color="#646464"/>
-    <ShowFunction ID="30" StartTime="10128" Duration="500" Color="#646464"/>
-   </Track>
-  </Function>
-  <Function ID="32" Type="Chaser" Name="identity_chaser" Path="identity">
+  <Function ID="32" Type="Chaser" Name="id_main" Path="identity">
    <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -586,6 +567,420 @@
    <Step Number="8" FadeIn="0" Hold="300" FadeOut="0" Note="60">22</Step>
    <Step Number="9" FadeIn="0" Hold="5000" FadeOut="0" Note="65">21</Step>
    <Step Number="10" FadeIn="0" Hold="25000" FadeOut="0" Note="90">24</Step>
+  </Function>
+  <Function ID="33" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="4"/>
+   <FixtureGroup ID="3"/>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="1"/>
+  </Function>
+  <Function ID="34" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,12,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0</FixtureVal>
+   <FixtureVal ID="0">0,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="5">0,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0</FixtureVal>
+   <FixtureVal ID="9">0,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,12,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0</FixtureVal>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="3"/>
+   <FixtureGroup ID="4"/>
+   <FixtureGroup ID="8"/>
+  </Function>
+  <Function ID="35" Type="Sequence" Name="hr_s1" Path="heavy_rotation" BoundScene="34">
+   <Speed FadeIn="0" FadeOut="0" Duration="337"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="337" FadeOut="0" Values="40">0:0,200,4,255,5,255,6,255:5:0,200,4,255,5,255,6,255:6:0,200:7:0,200:8:0,200,2,255,3,255,4,255,12,200:9:0,200,2,255,3,255,4,255,12,200:10:0,200:11:0,200:13:0,200:14:0,200</Step>
+   <Step Number="1" FadeIn="0" Hold="337" FadeOut="0" Values="40"/>
+  </Function>
+  <Function ID="36" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,0,2,0,3,0,4,0,5,0,12,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0</FixtureVal>
+   <FixtureVal ID="0">0,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="5">0,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0</FixtureVal>
+   <FixtureVal ID="9">0,0,2,0,3,0,4,0,5,0,12,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0</FixtureVal>
+   <FixtureVal ID="3">0,0</FixtureVal>
+   <FixtureVal ID="4">0,0</FixtureVal>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="3"/>
+   <FixtureGroup ID="4"/>
+  </Function>
+  <Function ID="37" Type="Sequence" Name="hr_s2" Path="heavy_rotation" BoundScene="36">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0" Values="38">0:0,255,4,255,5,255,6,255:5:0,255,4,255,5,255,6,255:6:0,255:8:2,255,3,255,4,255,12,255:10:0,255:12:0,255:13:0,255:14:0,255</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0" Values="38">0:4,255,5,255,6,255,7,255:5:4,255,5,255,6,255,7,255:6:0,255:7:0,255:8:0,255,2,255,3,255,4,255,5,255,12,255:9:0,255,2,255,3,255,4,255,5,255,12,255:10:0,255:11:0,255:12:0,255:13:0,255</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0" Values="38">0:0,255,4,255,5,255,6,255:5:0,255,4,255,5,255,6,255:6:0,255:8:2,255,3,255,4,255:10:0,255:12:0,255:13:0,255:14:0,255</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0" Values="38">0:0,255,4,255,5,255,6,255:5:0,255,4,255,5,255,6,255:6:0,255:7:0,255:8:0,255,2,255,3,255,4,255,12,255:9:0,255,2,255,3,255,4,255,12,255:10:0,255:11:0,255:12:0,255:13:0,255:14:0,255</Step>
+  </Function>
+  <Function ID="38" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="4"/>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="3"/>
+   <FixtureGroup ID="4"/>
+   <FixtureGroup ID="7"/>
+   <FixtureGroup ID="8"/>
+  </Function>
+  <Function ID="39" Type="RGBMatrix" Name="hr_s3_rgb" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="674"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">2colors</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+  </Function>
+  <Function ID="40" Type="Chaser" Name="hr_main" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="1348"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="1348" FadeOut="0">35</Step>
+   <Step Number="1" FadeIn="0" Hold="1348" FadeOut="0">37</Step>
+   <Step Number="2" FadeIn="0" Hold="6000" FadeOut="0">42</Step>
+   <Step Number="3" FadeIn="0" Hold="19000" FadeOut="0">45</Step>
+   <Step Number="4" FadeIn="0" Hold="11000" FadeOut="0">52</Step>
+   <Step Number="5" FadeIn="0" Hold="22000" FadeOut="0">59</Step>
+   <Step Number="6" FadeIn="0" Hold="11000" FadeOut="0">31</Step>
+   <Step Number="7" FadeIn="0" Hold="40000" FadeOut="0">64</Step>
+   <Step Number="8" FadeIn="0" Hold="6000" FadeOut="0">52</Step>
+   <Step Number="9" FadeIn="0" Hold="21000" FadeOut="0">59</Step>
+   <Step Number="10" FadeIn="0" Hold="11000" FadeOut="0">31</Step>
+   <Step Number="11" FadeIn="0" Hold="41000" FadeOut="0">64</Step>
+   <Step Number="12" FadeIn="0" Hold="10000" FadeOut="0">43</Step>
+   <Step Number="13" FadeIn="0" Hold="25000" FadeOut="0">59</Step>
+   <Step Number="14" FadeIn="0" Hold="2000" FadeOut="0">54</Step>
+   <Step Number="15" FadeIn="0" Hold="41000" FadeOut="0">64</Step>
+   <Step Number="16" FadeIn="0" Hold="12000" FadeOut="0">42</Step>
+   <Step Number="17" FadeIn="0" Hold="10000" FadeOut="0">69</Step>
+  </Function>
+  <Function ID="41" Type="Scene" Name="hr_s3_dimmer" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,200,12,200</FixtureVal>
+   <FixtureVal ID="7">0,200</FixtureVal>
+   <FixtureVal ID="11">0,200</FixtureVal>
+   <FixtureVal ID="9">0,200,12,200</FixtureVal>
+   <FixtureVal ID="13">0,200</FixtureVal>
+   <FixtureVal ID="0">0,200</FixtureVal>
+   <FixtureVal ID="6">0,200</FixtureVal>
+   <FixtureVal ID="5">0,200</FixtureVal>
+   <FixtureVal ID="14">0,200</FixtureVal>
+   <FixtureVal ID="10">0,200</FixtureVal>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="4"/>
+   <FixtureGroup ID="7"/>
+   <FixtureGroup ID="8"/>
+  </Function>
+  <Function ID="42" Type="Collection" Name="hr_s3" Path="heavy_rotation">
+   <Step Number="0">39</Step>
+   <Step Number="1">41</Step>
+  </Function>
+  <Function ID="43" Type="Scene" Name="hr_s9" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,200,4,30,7,110</FixtureVal>
+   <FixtureVal ID="4">0,200,4,30,7,110</FixtureVal>
+   <FixtureVal ID="8">0,200,2,204,3,0,4,255,8,255,12,200</FixtureVal>
+   <FixtureVal ID="0">0,200,4,204,5,0,6,255</FixtureVal>
+   <FixtureVal ID="9">0,200,2,204,3,0,4,255,8,255,12,200</FixtureVal>
+   <FixtureVal ID="5">0,200,4,204,5,0,6,255</FixtureVal>
+   <FixtureVal ID="7">0,200</FixtureVal>
+   <FixtureVal ID="6">0,200</FixtureVal>
+   <FixtureVal ID="13">0,200</FixtureVal>
+   <FixtureVal ID="10">0,200</FixtureVal>
+   <FixtureVal ID="14">0,200</FixtureVal>
+   <FixtureVal ID="11">0,200</FixtureVal>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="0"/>
+  </Function>
+  <Function ID="44" Type="RGBMatrix" Name="hr_s4_rgb" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="674"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">2colors</Algorithm>
+   <Color Index="0">4294967040</Color>
+   <Color Index="1">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+  </Function>
+  <Function ID="45" Type="Collection" Name="hr_s4" Path="heavy_rotation">
+   <Step Number="0">44</Step>
+   <Step Number="1">47</Step>
+   <Step Number="2">49</Step>
+   <Step Number="3">50</Step>
+  </Function>
+  <Function ID="46" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,0,1,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0</FixtureVal>
+  </Function>
+  <Function ID="47" Type="Sequence" Name="hr_s4_standard" Path="heavy_rotation" BoundScene="46">
+   <Speed FadeIn="0" FadeOut="0" Duration="674"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="674" FadeOut="0" Values="12">6:0,255:7:0,255:10:0,255:11:0,255:13:1,255:14:1,255</Step>
+   <Step Number="1" FadeIn="0" Hold="674" FadeOut="0" Values="12">6:1,255:7:1,255:10:1,255:11:1,255:13:0,255:14:0,255</Step>
+   <Step Number="2" FadeIn="0" Hold="674" FadeOut="0" Values="12">6:0,255:7:1,255:10:0,255:11:1,255:13:1,255:14:0,255</Step>
+   <Step Number="3" FadeIn="0" Hold="674" FadeOut="0" Values="12">6:1,255:7:0,255:10:1,255:11:0,255:13:0,255:14:1,255</Step>
+  </Function>
+  <Function ID="48" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,4,0,7,0</FixtureVal>
+   <FixtureVal ID="4">0,0,4,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="49" Type="Sequence" Name="hr_s4_imrelax" Path="heavy_rotation" BoundScene="48">
+   <Speed FadeIn="0" FadeOut="0" Duration="674"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="674" FadeOut="0" Values="6">3:0,255,4,30:4:0,255,4,30</Step>
+   <Step Number="1" FadeIn="0" Hold="674" FadeOut="0" Values="6">3:0,255,4,30,7,90:4:0,255,4,30</Step>
+   <Step Number="2" FadeIn="0" Hold="674" FadeOut="0" Values="6">3:0,255,4,30:4:0,255,4,30,7,90</Step>
+   <Step Number="3" FadeIn="0" Hold="674" FadeOut="0" Values="6">3:0,255,4,30,7,90:4:0,255,4,30,7,90</Step>
+  </Function>
+  <Function ID="50" Type="Scene" Name="hr_s4_dimmer" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,255,12,255</FixtureVal>
+   <FixtureVal ID="0">0,255</FixtureVal>
+   <FixtureVal ID="9">0,255,12,255</FixtureVal>
+   <FixtureVal ID="5">0,255</FixtureVal>
+   <FixtureGroup ID="2"/>
+  </Function>
+  <Function ID="51" Type="RGBMatrix" Name="hr_s5_rgb" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="674"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">2colors</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+  </Function>
+  <Function ID="52" Type="Collection" Name="hr_s5" Path="heavy_rotation">
+   <Step Number="0">51</Step>
+   <Step Number="1">56</Step>
+   <Step Number="2">57</Step>
+  </Function>
+  <Function ID="53" Type="EFX" Name="hr_s8_efx" Path="heavy_rotation">
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Eight</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="54" Type="Collection" Name="hr_s10" Path="heavy_rotation">
+   <Step Number="0">66</Step>
+   <Step Number="1">68</Step>
+  </Function>
+  <Function ID="55" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,4,0,7,0</FixtureVal>
+   <FixtureVal ID="4">0,0,4,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="56" Type="Sequence" Name="hr_s5_imrelax" Path="heavy_rotation" BoundScene="55">
+   <Speed FadeIn="0" FadeOut="0" Duration="674"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="674" FadeOut="0" Values="6">3:0,255,4,30:4:0,255,4,30</Step>
+   <Step Number="1" FadeIn="0" Hold="674" FadeOut="0" Values="6">3:0,255,4,30,7,30:4:0,255,4,30</Step>
+   <Step Number="2" FadeIn="0" Hold="674" FadeOut="0" Values="6">3:0,255,4,30:4:0,255,4,30,7,30</Step>
+   <Step Number="3" FadeIn="0" Hold="674" FadeOut="0" Values="6">3:0,255,4,30,7,30:4:0,255,4,30,7,30</Step>
+  </Function>
+  <Function ID="57" Type="Scene" Name="hr_s5_dimmer" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,200,12,200</FixtureVal>
+   <FixtureVal ID="0">0,200</FixtureVal>
+   <FixtureVal ID="9">0,200,12,200</FixtureVal>
+   <FixtureVal ID="5">0,200</FixtureVal>
+   <FixtureVal ID="11">0,200</FixtureVal>
+   <FixtureVal ID="7">0,200</FixtureVal>
+   <FixtureVal ID="6">0,200</FixtureVal>
+   <FixtureVal ID="10">0,200</FixtureVal>
+   <FixtureVal ID="13">0,200</FixtureVal>
+   <FixtureVal ID="14">0,200</FixtureVal>
+   <FixtureGroup ID="2"/>
+  </Function>
+  <Function ID="58" Type="RGBMatrix" Name="hr_s6_rgb" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="2796"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">2colors</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4294967040</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+  </Function>
+  <Function ID="59" Type="Collection" Name="hr_s6" Path="heavy_rotation">
+   <Step Number="0">58</Step>
+   <Step Number="1">61</Step>
+   <Step Number="2">62</Step>
+  </Function>
+  <Function ID="60" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,4,0,7,0</FixtureVal>
+   <FixtureVal ID="4">0,0,4,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="61" Type="Sequence" Name="hr_s6_imrelax" Path="heavy_rotation" BoundScene="60">
+   <Speed FadeIn="0" FadeOut="0" Duration="2796"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="2796" FadeOut="0" Values="6">3:0,255,4,30,7,30:4:0,255,4,30,7,30</Step>
+   <Step Number="1" FadeIn="0" Hold="2796" FadeOut="0" Values="6">3:0,255,4,30,7,30:4:0,255,4,30,7,90</Step>
+   <Step Number="2" FadeIn="0" Hold="2796" FadeOut="0" Values="6">3:0,255,4,30,7,90:4:0,255,4,30,7,30</Step>
+   <Step Number="3" FadeIn="0" Hold="2796" FadeOut="0" Values="6">3:0,255,4,30,7,90:4:0,255,4,30,7,90</Step>
+  </Function>
+  <Function ID="62" Type="Scene" Name="hr_s6_dimmer" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,200,12,200</FixtureVal>
+   <FixtureVal ID="0">0,200</FixtureVal>
+   <FixtureVal ID="9">0,200,12,200</FixtureVal>
+   <FixtureVal ID="5">0,200</FixtureVal>
+   <FixtureVal ID="11">1,200</FixtureVal>
+   <FixtureVal ID="7">1,200</FixtureVal>
+   <FixtureVal ID="6">1,200</FixtureVal>
+   <FixtureVal ID="10">1,200</FixtureVal>
+   <FixtureVal ID="13">1,200</FixtureVal>
+   <FixtureVal ID="14">1,200</FixtureVal>
+   <FixtureGroup ID="2"/>
+  </Function>
+  <Function ID="63" Type="RGBMatrix" Name="hr_s8_rgb" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="2796"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">2colors</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4294967040</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+  </Function>
+  <Function ID="64" Type="Collection" Name="hr_s8" Path="heavy_rotation">
+   <Step Number="0">63</Step>
+   <Step Number="1">67</Step>
+   <Step Number="2">53</Step>
+  </Function>
+  <Function ID="65" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,7,0</FixtureVal>
+   <FixtureVal ID="4">0,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="66" Type="RGBMatrix" Name="hr_s10_rgb" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="100"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">3colors</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>2</FixtureGroup>
+   <Property Name="color1" Value="ff0000"/>
+   <Property Name="color2" Value="0000ff"/>
+   <Property Name="color3" Value="cc00ff"/>
+  </Function>
+  <Function ID="67" Type="Scene" Name="hr_s8_dimmer" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,200,12,200</FixtureVal>
+   <FixtureVal ID="0">0,200</FixtureVal>
+   <FixtureVal ID="9">0,200,12,200</FixtureVal>
+   <FixtureVal ID="5">0,200</FixtureVal>
+   <FixtureVal ID="11">1,200</FixtureVal>
+   <FixtureVal ID="7">1,200</FixtureVal>
+   <FixtureVal ID="6">1,200</FixtureVal>
+   <FixtureVal ID="10">1,200</FixtureVal>
+   <FixtureVal ID="13">1,200</FixtureVal>
+   <FixtureVal ID="14">1,200</FixtureVal>
+   <FixtureVal ID="3">0,255,7,200</FixtureVal>
+   <FixtureVal ID="4">0,255,7,200</FixtureVal>
+   <FixtureGroup ID="2"/>
+  </Function>
+  <Function ID="68" Type="Scene" Name="hr_s10_dimmer" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,7,255</FixtureVal>
+   <FixtureVal ID="4">0,255,7,255</FixtureVal>
+   <FixtureVal ID="8">0,255,12,255</FixtureVal>
+   <FixtureVal ID="0">0,255</FixtureVal>
+   <FixtureVal ID="9">0,255,12,255</FixtureVal>
+   <FixtureVal ID="5">0,255</FixtureVal>
+   <FixtureVal ID="7">0,255</FixtureVal>
+   <FixtureVal ID="6">0,255</FixtureVal>
+   <FixtureVal ID="13">0,255</FixtureVal>
+   <FixtureVal ID="14">0,255</FixtureVal>
+   <FixtureVal ID="10">0,255</FixtureVal>
+   <FixtureVal ID="11">0,255</FixtureVal>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="0"/>
+  </Function>
+  <Function ID="69" Type="Scene" Name="hr_s11" Path="heavy_rotation">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,255,7,0</FixtureVal>
+   <FixtureVal ID="4">0,255,7,0</FixtureVal>
+   <FixtureVal ID="8">0,200,2,255,3,255,4,255,12,200</FixtureVal>
+   <FixtureVal ID="0">0,200,4,255,5,255,6,255</FixtureVal>
+   <FixtureVal ID="9">0,200,2,255,3,255,4,255,12,200</FixtureVal>
+   <FixtureVal ID="5">0,200,4,255,5,255,6,255</FixtureVal>
+   <FixtureVal ID="7">0,255</FixtureVal>
+   <FixtureVal ID="6">0,255</FixtureVal>
+   <FixtureVal ID="13">0,255</FixtureVal>
+   <FixtureVal ID="14">0,255</FixtureVal>
+   <FixtureVal ID="11">0,255</FixtureVal>
+   <FixtureVal ID="10">0,255</FixtureVal>
+   <FixtureGroup ID="2"/>
+   <FixtureGroup ID="0"/>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -619,9 +1014,16 @@
    <ShowEnableButton>True</ShowEnableButton>
    <Collapsed>False</Collapsed>
    <Disabled>False</Disabled>
+   <Label Caption="hebirote" ID="4">
+    <WindowState Visible="True" X="555" Y="35" Width="98" Height="31"/>
+   </Label>
    <CueList Caption="main" ID="0">
-    <WindowState Visible="True" X="276" Y="180" Width="826" Height="576"/>
+    <WindowState Visible="True" X="23" Y="11" Width="484" Height="389"/>
     <Chaser>32</Chaser>
+   </CueList>
+   <CueList Caption="hr_main" ID="1">
+    <WindowState Visible="True" X="555" Y="70" Width="437" Height="377"/>
+    <Chaser>40</Chaser>
    </CueList>
   </Frame>
   <Frame Caption="Page 2" ID="1">
@@ -634,6 +1036,10 @@
    <ShowEnableButton>True</ShowEnableButton>
    <Collapsed>False</Collapsed>
    <Disabled>False</Disabled>
+   <CueList Caption="Cue List 3" ID="2">
+    <WindowState Visible="True" X="318" Y="212" Width="314" Height="196"/>
+    <Chaser>4294967295</Chaser>
+   </CueList>
   </Frame>
   <Frame Caption="Page 3" ID="2">
    <Appearance>
